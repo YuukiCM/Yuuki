@@ -37,3 +37,71 @@
 .yk *{
     box-sizing:border-box;
 }
+
+/*==================================================
+                    POST 01
+==================================================*/
+
+.yk-post01{
+    --accent:#d8a6b5;
+
+    width:470px;
+    margin:20px auto;
+    border:1px solid var(--accent);
+    border-radius:8px;
+    padding:14px;
+    color:inherit;
+    font:300 13px/1.9 'Outfit',sans-serif;
+}
+
+.yk-post01 .yk-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.yk-post01 .yk-title{
+    display:inline-block;
+    padding:5px 12px;
+    border:1px solid var(--accent);
+    border-radius:20px;
+    color:var(--accent);
+    font-size:9px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.yk-post01 .yk-icon{
+    color:var(--accent);
+    font-size:16px;
+}
+
+.yk-post01 .yk-body{
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding:14px 0;
+    text-align:justify;
+}
+
+.yk-post01 .yk-footer{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-size:9px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.yk-post01 .yk-credit{
+    margin-top:8px;
+    text-align:right;
+}
+
+.yk-post01 .yk-credit a{
+    color:var(--accent);
+    text-decoration:none;
+    font-size:8px;
+    letter-spacing:3px;
+}
