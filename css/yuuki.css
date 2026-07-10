@@ -1,180 +1,105 @@
 /*==================================================
 
-                ψuuκï Codes
-                Post 01 Minimal
+            ψuuκï Codes
+            Post 01 Minimal
 
 ==================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-/*==============================
-=          CONTENEDOR         =
-==============================*/
-
 .yk-post{
-
-    width:400px;
-    margin:20px auto;
-
+    width:390px;
+    margin:15px auto;
     background:var(--fondo3);
     border:var(--borde2);
-
     color:var(--textobase);
-
     font:400 12px/1.9 'Outfit',sans-serif;
-
     overflow:hidden;
-
     box-sizing:border-box;
-
 }
 
+.yk-post,
 .yk-post *{
-
     box-sizing:border-box;
-
 }
 
-/*==============================
-=          CABECERA           =
-==============================*/
+/* CABECERA */
 
 .yk-top{
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:14px 18px;
-
+    padding:12px 15px;
     border-bottom:var(--borde1);
-
 }
 
 .yk-title{
-
     display:inline-block;
-
-    padding:5px 10px;
-
-    border:var(--borde2);
-
-    border-radius:4px;
-
+    padding:4px 10px;
     background:var(--fondo4);
-
+    border:var(--borde2);
     color:var(--grupo-color);
-
     text-transform:uppercase;
-
-    letter-spacing:1px;
-
     font-size:9px;
-
     font-weight:700;
-
+    letter-spacing:1px;
 }
 
 .yk-icon{
-
     color:var(--grupo-color);
-
     font-size:16px;
-
 }
 
-/*==============================
-=            TEXTO           =
-==============================*/
+/* CUERPO */
 
 .yk-text{
-
-    margin:18px;
-
-    padding:22px;
-
+    margin:15px;
+    padding:18px;
     background:var(--fondo5);
-
     border:var(--borde2);
-
-    text-align:justify;
-
-    line-height:2;
-
     color:var(--textobase);
-
+    text-align:justify;
+    line-height:1.9;
 }
 
-/*==============================
-=           FOOTER           =
-==============================*/
+/* FOOTER */
 
 .yk-bottom{
-
     display:flex;
-
     justify-content:flex-end;
-
-    gap:18px;
-
-    padding:0 18px 14px;
-
+    gap:15px;
+    padding:0 15px 12px;
     font-size:8px;
-
-    letter-spacing:1px;
-
     text-transform:uppercase;
-
-    color:var(--textobase);
-
+    letter-spacing:1px;
 }
 
 .yk-bottom span{
-
     display:flex;
-
     align-items:center;
-
     gap:4px;
-
 }
 
 .yk-bottom i{
-
     color:var(--grupo-color);
-
 }
 
-/*==============================
-=          CRÉDITO           =
-==============================*/
+/* CRÉDITO */
 
 .yk-credit{
-
     text-align:right;
-
-    padding:0 18px 12px;
-
+    padding:0 15px 12px;
 }
 
 .yk-credit a{
-
     color:var(--grupo-color);
-
     text-decoration:none;
-
     font-size:7px;
-
     letter-spacing:3px;
-
-    opacity:.7;
-
+    opacity:.6;
     transition:.3s;
-
 }
 
 .yk-credit a:hover{
-
     opacity:1;
-
 }
