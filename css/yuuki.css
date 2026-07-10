@@ -1,117 +1,132 @@
 /*==================================================
 
-                    ψuuκï Codes
-                    Post 01
+                ψuuκï Codes
+                Post 01 Minimal
 
 ==================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 /*==============================
-=            GENERAL          =
+=          CONTENEDOR         =
 ==============================*/
 
 .yk-post{
-    --accent:#d8a6b5;
 
     width:400px;
     margin:20px auto;
 
     background:var(--fondo3);
-    color:var(--textobase);
-
     border:var(--borde2);
-    border-radius:8px;
 
-    overflow:hidden;
+    color:var(--textobase);
 
     font:400 12px/1.9 'Outfit',sans-serif;
 
+    overflow:hidden;
+
     box-sizing:border-box;
+
 }
 
 .yk-post *{
+
     box-sizing:border-box;
+
 }
 
 /*==============================
-=           CABECERA          =
+=          CABECERA           =
 ==============================*/
 
 .yk-top{
+
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 22px;
+    padding:14px 18px;
 
     border-bottom:var(--borde1);
+
 }
 
-.yk-pill{
+.yk-title{
+
     display:inline-block;
 
-    padding:8px 18px;
+    padding:5px 10px;
 
-    border:1px solid var(--accent);
-    border-radius:30px;
+    border:var(--borde2);
 
-    color:var(--accent);
+    border-radius:4px;
+
+    background:var(--fondo4);
+
+    color:var(--grupo-color);
 
     text-transform:uppercase;
 
-    letter-spacing:2px;
-    font-size:10px;
+    letter-spacing:1px;
+
+    font-size:9px;
+
     font-weight:700;
+
 }
 
 .yk-icon{
-    color:var(--accent);
-    font-size:20px;
+
+    color:var(--grupo-color);
+
+    font-size:16px;
+
 }
 
 /*==============================
-=            CUERPO           =
+=            TEXTO           =
 ==============================*/
 
 .yk-text{
 
-    padding:28px;
+    margin:18px;
 
-    min-height:170px;
+    padding:22px;
+
+    background:var(--fondo5);
+
+    border:var(--borde2);
 
     text-align:justify;
 
+    line-height:2;
+
     color:var(--textobase);
 
-    line-height:2;
 }
 
 /*==============================
-=            FOOTER           =
+=           FOOTER           =
 ==============================*/
 
 .yk-bottom{
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-end;
 
-    gap:30px;
+    gap:18px;
 
-    align-items:center;
+    padding:0 18px 14px;
 
-    padding:14px 18px;
-
-    border-top:var(--borde1);
-
-    font-size:9px;
+    font-size:8px;
 
     letter-spacing:1px;
 
     text-transform:uppercase;
 
     color:var(--textobase);
+
 }
 
 .yk-bottom span{
@@ -120,41 +135,46 @@
 
     align-items:center;
 
-    gap:5px;
+    gap:4px;
+
 }
 
 .yk-bottom i{
 
-    color:var(--accent);
+    color:var(--grupo-color);
 
-    font-size:10px;
 }
 
 /*==============================
-=            CRÉDITO          =
+=          CRÉDITO           =
 ==============================*/
 
 .yk-credit{
 
     text-align:right;
 
-    padding:10px 18px 14px;
+    padding:0 18px 12px;
+
 }
 
 .yk-credit a{
 
-    color:var(--accent);
+    color:var(--grupo-color);
 
     text-decoration:none;
 
-    font-size:8px;
+    font-size:7px;
 
-    letter-spacing:4px;
+    letter-spacing:3px;
+
+    opacity:.7;
 
     transition:.3s;
+
 }
 
 .yk-credit a:hover{
 
-    opacity:.65;
+    opacity:1;
+
 }
