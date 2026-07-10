@@ -1,19 +1,18 @@
 /*==================================================
 
-            ψuuκï Codes
-            Post 01 Minimal
+                ψuuκï Codes
+                Post 01
 
 ==================================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
 
 .yk-post{
-    width:390px;
+    width:385px;
     margin:15px auto;
     background:var(--fondo3);
     border:var(--borde2);
     color:var(--textobase);
-    font:400 12px/1.9 'Outfit',sans-serif;
     overflow:hidden;
     box-sizing:border-box;
 }
@@ -26,52 +25,53 @@
 /* CABECERA */
 
 .yk-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 15px;
-    border-bottom:var(--borde1);
+    padding:22px 30px 18px;
+    text-align:center;
 }
 
 .yk-title{
-    display:inline-block;
-    padding:4px 10px;
-    background:var(--fondo4);
-    border:var(--borde2);
+    font:600 26px/100% 'Cormorant Garamond',serif;
     color:var(--grupo-color);
-    text-transform:uppercase;
-    font-size:9px;
-    font-weight:700;
-    letter-spacing:1px;
+    letter-spacing:.5px;
+    text-transform:none;
 }
 
-.yk-icon{
+.yk-star{
+    margin-top:8px;
     color:var(--grupo-color);
-    font-size:16px;
+    font-size:10px;
+    letter-spacing:8px;
 }
 
-/* CUERPO */
+/* LINEA */
+
+.yk-line{
+    width:calc(100% - 60px);
+    height:1px;
+    background:var(--borde2-c);
+    margin:0 auto;
+}
+
+/* TEXTO */
 
 .yk-text{
-    margin:15px;
-    padding:18px;
-    background:var(--fondo5);
-    border:var(--borde2);
-    color:var(--textobase);
+    padding:28px 30px;
+    font:400 12px/2 'Outfit',sans-serif;
     text-align:justify;
-    line-height:1.9;
+    color:var(--textobase);
 }
 
 /* FOOTER */
 
 .yk-bottom{
     display:flex;
-    justify-content:flex-end;
-    gap:15px;
-    padding:0 15px 12px;
-    font-size:8px;
-    text-transform:uppercase;
+    justify-content:center;
+    gap:18px;
+    padding:15px 20px;
+    font:600 8px 'Outfit',sans-serif;
     letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--textobase);
 }
 
 .yk-bottom span{
@@ -82,24 +82,20 @@
 
 .yk-bottom i{
     color:var(--grupo-color);
+    font-size:10px;
 }
 
 /* CRÉDITO */
 
 .yk-credit{
+    width:385px;
+    margin:-2px auto 18px;
     text-align:right;
-    padding:0 15px 12px;
+    font:500 8px 'Outfit',sans-serif;
+    letter-spacing:3px;
 }
 
 .yk-credit a{
     color:var(--grupo-color);
     text-decoration:none;
-    font-size:7px;
-    letter-spacing:3px;
-    opacity:.6;
-    transition:.3s;
-}
-
-.yk-credit a:hover{
-    opacity:1;
 }
