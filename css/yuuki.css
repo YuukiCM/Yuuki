@@ -1,72 +1,141 @@
 /*==================================================
 
-               ψuuκï Codes
+                ψuuκï Codes
                   Post 01
 
 ==================================================*/
 
 .yk-post{
+    --accent:#d8a6b5;
+
     width:400px;
     margin:20px auto;
-    background:#151515;
-    border:1px solid #d8a6b5;
+    background:#171717;
+    border:1px solid var(--accent);
     border-radius:8px;
     overflow:hidden;
+
     color:#d8d8d8;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     font-size:13px;
     line-height:1.8;
+
+    box-sizing:border-box;
 }
+
+.yk-post *{
+    box-sizing:border-box;
+}
+
+/*==============================
+=           CABECERA           =
+==============================*/
 
 .yk-top{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:14px 18px;
+
+    padding:18px;
+
     border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .yk-pill{
-    display:inline-block;
-    padding:5px 12px;
-    border:1px solid #d8a6b5;
-    border-radius:20px;
-    color:#d8a6b5;
+
+    padding:7px 15px;
+
+    border:1px solid var(--accent);
+    border-radius:25px;
+
+    color:var(--accent);
+
     font-size:9px;
-    font-weight:bold;
+    font-weight:700;
+
+    letter-spacing:3px;
     text-transform:uppercase;
-    letter-spacing:2px;
+
 }
 
 .yk-icon{
-    color:#d8a6b5;
+
+    color:var(--accent);
+
     font-size:18px;
+
 }
+
+/*==============================
+=            TEXTO             =
+==============================*/
 
 .yk-text{
-    padding:25px;
+
+    padding:28px;
+
     text-align:justify;
+
 }
 
+/*==============================
+=             PIE              =
+==============================*/
+
 .yk-bottom{
+
     display:flex;
     justify-content:space-between;
-    padding:10px 18px;
+    align-items:center;
+
+    padding:12px 18px;
+
     border-top:1px solid rgba(255,255,255,.08);
+
     font-size:9px;
     text-transform:uppercase;
     letter-spacing:1px;
-    color:#b7b7b7;
+
+    color:#bcbcbc;
+
 }
 
+.yk-bottom span i{
+
+    color:var(--accent);
+
+    margin-right:4px;
+
+}
+
+/*==============================
+=           CRÉDITO            =
+==============================*/
+
 .yk-credit{
-    padding:8px 18px 14px;
+
+    padding:10px 18px 14px;
+
     text-align:right;
+
 }
 
 .yk-credit a{
-    color:#d8a6b5;
+
+    color:var(--accent);
+
     text-decoration:none;
+
     font-size:8px;
-    letter-spacing:3px;
+
+    letter-spacing:4px;
+
+    transition:.3s;
+
+}
+
+.yk-credit a:hover{
+
+    opacity:.6;
+
 }
