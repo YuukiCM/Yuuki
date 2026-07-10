@@ -1,8 +1,39 @@
-/* ===========================
-   YUUKI CODES
-   by ψuuκï
-=========================== */
+/*==================================================
 
-body{
+                    ψuuκï Codes
+              https://github.com/YuukiCM/Yuuki
 
+==================================================*/
+
+/*==============================
+=            FUENTES           =
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+/*==============================
+=           COLORES            =
+==============================*/
+
+:root{
+    --yk-accent:#d8a6b5;
+    --yk-bg:rgba(255,255,255,.04);
+    --yk-border:rgba(255,255,255,.10);
+    --yk-text:inherit;
+}
+
+/*==============================
+=          GENERALES           =
+==============================*/
+
+.yk{
+    width:470px;
+    margin:20px auto;
+    color:inherit;
+    font-family:'Outfit',sans-serif;
+    box-sizing:border-box;
+}
+
+.yk *{
+    box-sizing:border-box;
 }
