@@ -1,39 +1,72 @@
-.yk-post01 .yk-head{
+/*==================================================
+
+               ψuuκï Codes
+                  Post 01
+
+==================================================*/
+
+.yk-post{
+    width:400px;
+    margin:20px auto;
+    background:#151515;
+    border:1px solid #d8a6b5;
+    border-radius:8px;
+    overflow:hidden;
+    color:#d8d8d8;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    line-height:1.8;
+}
+
+.yk-top{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px;
-    border-bottom:1px solid #d8a6b5;
+    padding:14px 18px;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.yk-post01 .yk-title{
+.yk-pill{
+    display:inline-block;
+    padding:5px 12px;
     border:1px solid #d8a6b5;
-    color:#d8a6b5;
-    padding:6px 12px;
     border-radius:20px;
-    font-size:10px;
+    color:#d8a6b5;
+    font-size:9px;
+    font-weight:bold;
     text-transform:uppercase;
+    letter-spacing:2px;
 }
 
-.yk-post01 .yk-icon{
+.yk-icon{
     color:#d8a6b5;
     font-size:18px;
 }
 
-.yk-post01 .yk-body{
-    padding:20px;
-    border-bottom:1px solid #d8a6b5;
+.yk-text{
+    padding:25px;
+    text-align:justify;
 }
 
-.yk-post01 .yk-foot{
+.yk-bottom{
     display:flex;
     justify-content:space-between;
-    padding:12px;
+    padding:10px 18px;
+    border-top:1px solid rgba(255,255,255,.08);
     font-size:9px;
     text-transform:uppercase;
+    letter-spacing:1px;
+    color:#b7b7b7;
 }
 
-.yk-post01 .yk-credit{
+.yk-credit{
+    padding:8px 18px 14px;
     text-align:right;
-    padding:10px;
+}
+
+.yk-credit a{
+    color:#d8a6b5;
+    text-decoration:none;
+    font-size:8px;
+    letter-spacing:3px;
 }
