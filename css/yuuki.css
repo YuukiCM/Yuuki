@@ -1,97 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
+/*==================================
+
+        ψuuκï Codes
+        Editorial 01
+
+==================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap');
 
 .yk-ed01{
-    width:390px;
-    margin:20px auto;
-    padding:28px;
+
+    width:420px;
+
+    margin:30px auto 8px;
+
+    padding:42px;
+
     background:var(--fondo3);
+
     border:var(--borde2);
+
     color:var(--textobase);
+
+    font-family:'Outfit',sans-serif;
+
     box-sizing:border-box;
+
 }
 
+.yk-ed01,
 .yk-ed01 *{
+
     box-sizing:border-box;
+
+}
+
+.yk-ed01-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
 }
 
 .yk-ed01-title{
 
-    font:600 28px 'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    font-weight:600;
+
+    line-height:1;
 
     color:var(--grupo-color);
 
-    text-align:center;
+    letter-spacing:.5px;
 
 }
 
-.yk-ed01-divider{
+.yk-ed01-icon{
+
+    color:var(--grupo-color);
+
+    font-size:16px;
+
+}
+
+.yk-ed01-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--borde2);
+
+    margin:28px 0;
+
+}
+
+.yk-ed01-content{
+
+    font-size:13px;
+
+    line-height:2.1;
+
+    text-align:justify;
+
+    color:var(--textobase);
+
+}/*==================================
+
+            CUERPO
+
+==================================*/
+
+.yk-ed01-content p{
+
+    margin:0 0 16px;
+
+}
+
+.yk-ed01-content b,
+.yk-ed01-content strong{
+
+    color:var(--grupo-color);
+
+    font-weight:600;
+
+}
+
+.yk-ed01-content i{
+
+    opacity:.9;
+
+}
+
+/*==================================
+
+            FOOTER
+
+==================================*/
+
+.yk-ed01-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:26px;
+
+    font-size:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    font-weight:600;
+
+}
+
+.yk-ed01-info span{
 
     display:flex;
 
     align-items:center;
 
-    justify-content:center;
+    gap:5px;
 
-    gap:12px;
+}
 
-    margin:18px 0 24px;
+.yk-ed01-info i{
 
     color:var(--grupo-color);
 
-}
-
-.yk-ed01-divider::before,
-.yk-ed01-divider::after{
-
-    content:"";
-
-    width:90px;
-
-    height:1px;
-
-    background:var(--borde2-c);
+    font-size:10px;
 
 }
 
-.yk-ed01-text{
+/*==================================
 
-    font:400 12px/2 'Outfit',sans-serif;
+            CRÉDITO
 
-    text-align:justify;
-
-}
-
-.yk-ed01-footer{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:18px;
-
-    margin-top:28px;
-
-    padding-top:18px;
-
-    border-top:var(--borde1);
-
-    font:600 8px 'Outfit',sans-serif;
-
-    letter-spacing:1px;
-
-    text-transform:uppercase;
-
-}
+==================================*/
 
 .yk-ed01-credit{
 
-    margin-top:12px;
+    width:420px;
+
+    margin:0 auto 25px;
 
     text-align:right;
 
-    font:500 8px 'Outfit',sans-serif;
+    font-family:'Outfit',sans-serif;
 
-    letter-spacing:3px;
+    font-size:8px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    opacity:.75;
 
 }
 
@@ -100,5 +194,71 @@
     color:var(--grupo-color);
 
     text-decoration:none;
+
+}
+
+/*==================================
+
+            EFECTOS
+
+==================================*/
+
+.yk-ed01{
+
+    transition:.35s;
+
+}
+
+.yk-ed01:hover{
+
+    border-color:var(--grupo-color);
+
+}
+
+/*==================================
+
+            RESPONSIVE
+
+==================================*/
+
+@media screen and (max-width:500px){
+
+.yk-ed01{
+
+    width:100%;
+
+    padding:28px;
+
+}
+
+.yk-ed01-credit{
+
+    width:100%;
+
+}
+
+.yk-ed01-header{
+
+    flex-direction:column;
+
+    gap:14px;
+
+    text-align:center;
+
+}
+
+.yk-ed01-title{
+
+    font-size:28px;
+
+}
+
+.yk-ed01-info{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
 
 }
