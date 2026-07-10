@@ -105,3 +105,8 @@
     font-size:8px;
     letter-spacing:3px;
 }
+.yk-test{
+    color:red !important;
+    font-size:40px !important;
+    background:yellow !important;
+}
