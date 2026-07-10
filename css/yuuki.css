@@ -1,101 +1,104 @@
-/*==================================================
-
-                ψuuκï Codes
-                Post 01
-
-==================================================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
 
-.yk-post{
-    width:385px;
-    margin:15px auto;
+.yk-ed01{
+    width:390px;
+    margin:20px auto;
+    padding:28px;
     background:var(--fondo3);
     border:var(--borde2);
     color:var(--textobase);
-    overflow:hidden;
     box-sizing:border-box;
 }
 
-.yk-post,
-.yk-post *{
+.yk-ed01 *{
     box-sizing:border-box;
 }
 
-/* CABECERA */
+.yk-ed01-title{
 
-.yk-top{
-    padding:22px 30px 18px;
+    font:600 28px 'Cormorant Garamond',serif;
+
+    color:var(--grupo-color);
+
     text-align:center;
+
 }
 
-.yk-title{
-    font:600 26px/100% 'Cormorant Garamond',serif;
-    color:var(--grupo-color);
-    letter-spacing:.5px;
-    text-transform:none;
-}
+.yk-ed01-divider{
 
-.yk-star{
-    margin-top:8px;
-    color:var(--grupo-color);
-    font-size:10px;
-    letter-spacing:8px;
-}
-
-/* LINEA */
-
-.yk-line{
-    width:calc(100% - 60px);
-    height:1px;
-    background:var(--borde2-c);
-    margin:0 auto;
-}
-
-/* TEXTO */
-
-.yk-text{
-    padding:28px 30px;
-    font:400 12px/2 'Outfit',sans-serif;
-    text-align:justify;
-    color:var(--textobase);
-}
-
-/* FOOTER */
-
-.yk-bottom{
     display:flex;
-    justify-content:center;
-    gap:18px;
-    padding:15px 20px;
-    font:600 8px 'Outfit',sans-serif;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:var(--textobase);
-}
 
-.yk-bottom span{
-    display:flex;
     align-items:center;
-    gap:4px;
-}
 
-.yk-bottom i{
+    justify-content:center;
+
+    gap:12px;
+
+    margin:18px 0 24px;
+
     color:var(--grupo-color);
-    font-size:10px;
+
 }
 
-/* CRÉDITO */
+.yk-ed01-divider::before,
+.yk-ed01-divider::after{
 
-.yk-credit{
-    width:385px;
-    margin:-2px auto 18px;
+    content:"";
+
+    width:90px;
+
+    height:1px;
+
+    background:var(--borde2-c);
+
+}
+
+.yk-ed01-text{
+
+    font:400 12px/2 'Outfit',sans-serif;
+
+    text-align:justify;
+
+}
+
+.yk-ed01-footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:28px;
+
+    padding-top:18px;
+
+    border-top:var(--borde1);
+
+    font:600 8px 'Outfit',sans-serif;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.yk-ed01-credit{
+
+    margin-top:12px;
+
     text-align:right;
+
     font:500 8px 'Outfit',sans-serif;
+
     letter-spacing:3px;
+
 }
 
-.yk-credit a{
+.yk-ed01-credit a{
+
     color:var(--grupo-color);
+
     text-decoration:none;
+
 }
