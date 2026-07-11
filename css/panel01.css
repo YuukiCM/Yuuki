@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*==================================
+CONTENEDOR
+==================================*/
+
+.pn01{
+
+    width:var(--post-width);
+
+    margin:40px auto;
+
+    font-family:"Manrope",sans-serif;
+
+}
+
+/*==================================
+TÍTULO
+==================================*/
+
+.pn01-titlebox{
+
+    width:fit-content;
+
+    min-width:300px;
+
+    margin:0 auto -18px;
+
+    padding:16px 40px;
+
+    background:var(--bgforo);
+
+    border:2px dashed var(--grupo-color);
+
+    border-radius:18px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.pn01-title{
+
+    font-family:var(--title-font);
+
+    font-size:var(--title-size);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    line-height:1;
+
+    text-align:center;
+
+    color:var(--grupo-color);
+
+}
+
+/*==================================
+POST
+==================================*/
+
+.pn01-contentbox{
+
+    min-height:340px;
+
+    padding:80px 55px 55px;
+
+    background:var(--bgforo);
+
+    border:2px dashed var(--grupo-color);
+
+    border-radius:var(--radius);
+
+    color:var(--textobase);
+
+    font-size:13px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+/*==================================
+PIE
+==================================*/
+
+.pn01-footer{
+
+    display:grid;
+
+    grid-template-columns:170px 120px 1fr;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+/*==================================
+TARJETAS
+==================================*/
+
+.card{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:58px;
+
+    padding:24px 18px 14px;
+
+    background:var(--bgforo);
+
+    border-radius:16px;
+
+    color:var(--textobase);
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+
+    left:18px;
+
+    right:18px;
+
+    height:2px;
+
+    background:var(--grupo-color);
+
+    border-radius:20px;
+
+    opacity:.75;
+
+}
