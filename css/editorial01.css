@@ -23,13 +23,13 @@
 
 body{
 
-    background:var(--fondo3,#f8f8f8);
+    background:transparent;
 
-    color:var(--textobase,#444);
+    color:var(--textobase);
 
     font-family:'Outfit',sans-serif;
 
-    padding:70px 0;
+    padding:50px 0;
 
 }
 
@@ -43,42 +43,13 @@ body{
 
     margin:0 auto;
 
-    padding:40px 40px 35px;
+    padding:42px;
 
-    background:var(--fondo3,#ffffff);
+    background:var(--fondo3);
 
-    position:relative;
+    border:8px solid var(--grupo-color);
 
-}
-
-/* Líneas superior e inferior */
-
-.ed01::before,
-.ed01::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:30px;
-
-    right:30px;
-
-    height:1px;
-
-    background:var(--borde2,#dddddd);
-
-}
-
-.ed01::before{
-
-    top:0;
-
-}
-
-.ed01::after{
-
-    bottom:0;
+    color:var(--textobase);
 
 }
 
@@ -90,19 +61,17 @@ body{
 
     font-family:'Yuyu',sans-serif;
 
-    font-size:50px;
+    font-size:48px;
 
     font-weight:400;
 
     letter-spacing:2px;
 
-    line-height:1;
-
     text-align:center;
 
-    color:var(--textobase,#444);
+    color:var(--textobase);
 
-    margin-bottom:24px;
+    margin-bottom:28px;
 
 }
 
@@ -112,9 +81,9 @@ body{
 
 .ed01-divider{
 
-    width:78%;
+    width:80%;
 
-    margin:18px auto;
+    margin:22px auto;
 
     display:flex;
 
@@ -131,9 +100,11 @@ body{
 
     flex:1;
 
-    height:1px;
+    height:2px;
 
-    background:var(--borde2,#dddddd);
+    background:var(--grupo-color);
+
+    opacity:.25;
 
 }
 
@@ -151,9 +122,9 @@ body{
 
 .ed01-divider span{
 
-    color:var(--grupo-color,#b78fa2);
+    color:var(--grupo-color);
 
-    font-size:8px;
+    font-size:14px;
 
     line-height:1;
 
@@ -165,13 +136,13 @@ body{
 
 .ed01-content{
 
-    width:90%;
+    width:92%;
 
     margin:0 auto;
 
-    color:var(--textobase,#555);
+    color:var(--textobase);
 
-    font-size:12.5px;
+    font-size:12px;
 
     font-weight:300;
 
@@ -179,7 +150,31 @@ body{
 
     text-align:justify;
 
-    min-height:40px;
+}
+
+/*==========================================
+                 NEGRITA
+==========================================*/
+
+.ed01-content strong,
+.ed01-content b{
+
+    color:var(--grupo-color);
+
+    font-weight:500;
+
+}
+
+/*==========================================
+                 CURSIVA
+==========================================*/
+
+.ed01-content em,
+.ed01-content i{
+
+    font-style:italic;
+
+    opacity:.9;
 
 }
 
@@ -197,7 +192,7 @@ body{
 
     gap:10px;
 
-    margin-top:24px;
+    margin-top:26px;
 
     font-size:8px;
 
@@ -205,15 +200,21 @@ body{
 
     text-transform:uppercase;
 
-    color:var(--textobase,#777);
+    color:var(--textobase);
+
+}
+
+.ed01-footer span{
+
+    white-space:nowrap;
 
 }
 
 .ed01-footer .star{
 
-    color:var(--grupo-color,#b78fa2);
+    color:var(--grupo-color);
 
-    font-size:7px;
+    font-size:10px;
 
 }
 
@@ -225,17 +226,15 @@ body{
 
     width:420px;
 
-    margin:18px auto 0;
+    margin:14px auto 0;
 
     text-align:right;
 
     font-size:7px;
 
-    letter-spacing:6px;
+    letter-spacing:5px;
 
-    text-transform:uppercase;
-
-    color:var(--textobase,#888);
+    color:var(--textobase);
 
     opacity:.45;
 
