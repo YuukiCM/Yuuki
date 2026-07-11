@@ -48,13 +48,20 @@ line-height:1;
 }
 
 .ed01-content{
-width:92%;
-margin:0 auto;
-font-size:12px;
-font-weight:300;
-line-height:2.1;
-color:var(--textobase);
-text-align:justify;
+
+    width:92%;
+    margin:0 auto;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    line-height:2;
+
+    color:var(--textobase);
+
+    text-align:justify;
+
 }
 
 .ed01-content strong,
