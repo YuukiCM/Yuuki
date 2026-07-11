@@ -1,0 +1,242 @@
+/*==========================================
+
+        ψuuκï Codes
+        Editorial 01
+
+==========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Yuyu&family=Outfit:wght@300;400;500&display=swap');
+
+/*==========================================
+                RESET
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*==========================================
+                BODY
+==========================================*/
+
+body{
+
+    background:var(--fondo3,#f8f8f8);
+
+    color:var(--textobase,#444);
+
+    font-family:'Outfit',sans-serif;
+
+    padding:70px 0;
+
+}
+
+/*==========================================
+              CONTENEDOR
+==========================================*/
+
+.ed01{
+
+    width:420px;
+
+    margin:0 auto;
+
+    padding:60px 48px 48px;
+
+    background:var(--fondo3,#ffffff);
+
+    position:relative;
+
+}
+
+/* Líneas superior e inferior */
+
+.ed01::before,
+.ed01::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:30px;
+
+    right:30px;
+
+    height:1px;
+
+    background:var(--borde2,#dddddd);
+
+}
+
+.ed01::before{
+
+    top:0;
+
+}
+
+.ed01::after{
+
+    bottom:0;
+
+}
+
+/*==========================================
+                TÍTULO
+==========================================*/
+
+.ed01-title{
+
+    font-family:'Yuyu',sans-serif;
+
+    font-size:50px;
+
+    font-weight:400;
+
+    letter-spacing:2px;
+
+    line-height:1;
+
+    text-align:center;
+
+    color:var(--textobase,#444);
+
+    margin-bottom:42px;
+
+}
+
+/*==========================================
+               DIVISOR
+==========================================*/
+
+.ed01-divider{
+
+    width:78%;
+
+    margin:32px auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.ed01-divider::before,
+.ed01-divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:var(--borde2,#dddddd);
+
+}
+
+.ed01-divider::before{
+
+    margin-right:16px;
+
+}
+
+.ed01-divider::after{
+
+    margin-left:16px;
+
+}
+
+.ed01-divider span{
+
+    color:var(--grupo-color,#b78fa2);
+
+    font-size:8px;
+
+    line-height:1;
+
+}
+
+/*==========================================
+                 TEXTO
+==========================================*/
+
+.ed01-content{
+
+    width:90%;
+
+    margin:0 auto;
+
+    color:var(--textobase,#555);
+
+    font-size:12.5px;
+
+    font-weight:300;
+
+    line-height:2.2;
+
+    text-align:justify;
+
+    min-height:90px;
+
+}
+
+/*==========================================
+                 FOOTER
+==========================================*/
+
+.ed01-footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:40px;
+
+    font-size:8px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:var(--textobase,#777);
+
+}
+
+.ed01-footer .star{
+
+    color:var(--grupo-color,#b78fa2);
+
+    font-size:7px;
+
+}
+
+/*==========================================
+                 CRÉDITO
+==========================================*/
+
+.ed01-credit{
+
+    width:420px;
+
+    margin:18px auto 0;
+
+    text-align:right;
+
+    font-size:7px;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:var(--textobase,#888);
+
+    opacity:.45;
+
+}
