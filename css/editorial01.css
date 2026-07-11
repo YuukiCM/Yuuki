@@ -1,241 +1,105 @@
-/*==========================================
+@import url('https://fonts.googleapis.com/css2?family=Yuyu&family=Outfit:wght@300;400;500;600&display=swap');
 
-        ψuuκï Codes
-        Editorial 01
-
-==========================================*/
-
-@import url('https://fonts.googleapis.com/css2?family=Yuyu&family=Outfit:wght@300;400;500&display=swap');
-
-/*==========================================
-                RESET
-==========================================*/
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/*==========================================
-                BODY
-==========================================*/
-
-body{
-
-    background:transparent;
-
-    color:var(--textobase);
-
-    font-family:'Outfit',sans-serif;
-
-    padding:50px 0;
-
-}
-
-/*==========================================
-              CONTENEDOR
-==========================================*/
+*{margin:0;padding:0;box-sizing:border-box;}
 
 .ed01{
-
-    width:420px;
-
-    margin:0 auto;
-
-    padding:42px;
-
-    background:var(--fondo3);
-
-    border:8px solid var(--grupo-color);
-
-    color:var(--textobase);
-
+width:420px;
+margin:30px auto;
+padding:40px;
+background:var(--fondo3);
+color:var(--textobase);
+font-family:'Outfit',sans-serif;
+border:6px solid var(--grupo-color);
+box-shadow:0 0 0 2px var(--borde2);
 }
-
-/*==========================================
-                TÍTULO
-==========================================*/
 
 .ed01-title{
-
-    font-family:'Yuyu',sans-serif;
-
-    font-size:48px;
-
-    font-weight:400;
-
-    letter-spacing:2px;
-
-    text-align:center;
-
-    color:var(--textobase);
-
-    margin-bottom:28px;
-
+font-family:'Yuyu',sans-serif;
+font-size:48px;
+line-height:1;
+text-align:center;
+letter-spacing:2px;
+color:var(--textobase);
+margin-bottom:24px;
 }
 
-/*==========================================
-               DIVISOR
-==========================================*/
-
 .ed01-divider{
-
-    width:80%;
-
-    margin:22px auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
+width:82%;
+margin:18px auto;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:14px;
 }
 
 .ed01-divider::before,
 .ed01-divider::after{
-
-    content:"";
-
-    flex:1;
-
-    height:2px;
-
-    background:var(--grupo-color);
-
-    opacity:.25;
-
-}
-
-.ed01-divider::before{
-
-    margin-right:16px;
-
-}
-
-.ed01-divider::after{
-
-    margin-left:16px;
-
+content:"";
+flex:1;
+height:2px;
+background:var(--grupo-color);
+opacity:.8;
 }
 
 .ed01-divider span{
-
-    color:var(--grupo-color);
-
-    font-size:14px;
-
-    line-height:1;
-
+color:var(--grupo-color);
+font-size:14px;
+line-height:1;
 }
-
-/*==========================================
-                 TEXTO
-==========================================*/
 
 .ed01-content{
-
-    width:92%;
-
-    margin:0 auto;
-
-    color:var(--textobase);
-
-    font-size:12px;
-
-    font-weight:300;
-
-    line-height:2.2;
-
-    text-align:justify;
-
+width:92%;
+margin:0 auto;
+font-size:12px;
+font-weight:300;
+line-height:2.1;
+color:var(--textobase);
+text-align:justify;
 }
-
-/*==========================================
-                 NEGRITA
-==========================================*/
 
 .ed01-content strong,
 .ed01-content b{
-
-    color:var(--grupo-color);
-
-    font-weight:500;
-
+color:var(--grupo-color);
+font-weight:600;
 }
-
-/*==========================================
-                 CURSIVA
-==========================================*/
 
 .ed01-content em,
 .ed01-content i{
-
-    font-style:italic;
-
-    opacity:.9;
-
+font-style:italic;
 }
 
-/*==========================================
-                 FOOTER
-==========================================*/
+.ed01-content blockquote{
+margin:20px 0;
+padding-left:18px;
+border-left:3px solid var(--grupo-color);
+}
 
 .ed01-footer{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:10px;
-
-    margin-top:26px;
-
-    font-size:8px;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    color:var(--textobase);
-
+margin-top:26px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+flex-wrap:nowrap;
+font-size:8px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:var(--textobase);
 }
 
-.ed01-footer span{
-
-    white-space:nowrap;
-
-}
+.ed01-footer span{white-space:nowrap;}
 
 .ed01-footer .star{
-
-    color:var(--grupo-color);
-
-    font-size:10px;
-
+color:var(--grupo-color);
+font-size:11px;
 }
 
-/*==========================================
-                 CRÉDITO
-==========================================*/
-
 .ed01-credit{
-
-    width:420px;
-
-    margin:14px auto 0;
-
-    text-align:right;
-
-    font-size:7px;
-
-    letter-spacing:5px;
-
-    color:var(--textobase);
-
-    opacity:.45;
-
+width:420px;
+margin:10px auto 0;
+text-align:right;
+font-size:7px;
+letter-spacing:5px;
+color:var(--textobase);
+opacity:.45;
 }
