@@ -1,3 +1,5 @@
+/* ψuuκï Codes — Panel 01 */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
 
 *{
@@ -7,34 +9,12 @@
 }
 
 /*==================================
-VARIABLES
-==================================*/
-
-.pn01{
-
-    --textobase:#222222;
-    --title-color:var(--grupo-color);
-
-}
-
-@media (prefers-color-scheme:dark){
-
-    .pn01{
-
-        --textobase:#f2f2f2;
-        --title-color:#f2f2f2;
-
-    }
-
-}
-
-/*==================================
 CONTENEDOR
 ==================================*/
 
 .pn01{
 
-    width:var(--post-width);
+    width:var(--post-width,600px);
 
     margin:40px auto;
 
@@ -43,7 +23,7 @@ CONTENEDOR
 }
 
 /*==================================
-TÍTULO
+CAJA DEL TÍTULO
 ==================================*/
 
 .pn01-titlebox{
@@ -56,34 +36,36 @@ TÍTULO
 
     padding:18px 42px;
 
-    background:var(--bgforo);
+    background:var(--fondo3);
 
     border:1px solid var(--grupo-color);
 
     border-radius:18px;
 
+    box-shadow:0 0 0 2px var(--borde2);
+
 }
 
 .pn01-title{
 
-    font-family:var(--title-font);
+    font-family:var(--title-font,'Syne',sans-serif);
 
-    font-size:var(--title-size);
+    font-size:var(--title-size,34px);
 
     font-weight:800;
 
-    letter-spacing:2px;
-
     line-height:1;
+
+    letter-spacing:2px;
 
     text-align:center;
 
-    color:var(--title-color);
+    color:var(--grupo-color);
 
 }
 
 /*==================================
-POST
+CAJA DEL POST
 ==================================*/
 
 .pn01-contentbox{
@@ -92,11 +74,13 @@ POST
 
     padding:55px;
 
-    background:var(--bgforo);
+    background:var(--fondo3);
 
     border:1px solid var(--grupo-color);
 
-    border-radius:var(--radius);
+    border-radius:var(--radius,24px);
+
+    box-shadow:0 0 0 2px var(--borde2);
 
     color:var(--textobase);
 
@@ -105,6 +89,34 @@ POST
     line-height:1.9;
 
     text-align:justify;
+
+}
+
+.pn01-contentbox p{
+
+    margin:0 0 12px;
+
+}
+
+.pn01-contentbox p:last-child{
+
+    margin-bottom:0;
+
+}
+
+.pn01-contentbox strong,
+.pn01-contentbox b{
+
+    color:var(--grupo-color);
+
+    font-weight:600;
+
+}
+
+.pn01-contentbox em,
+.pn01-contentbox i{
+
+    font-style:italic;
 
 }
 
@@ -142,9 +154,11 @@ TARJETAS
 
     padding:24px 18px 14px;
 
-    background:var(--bgforo);
+    background:var(--fondo3);
 
     border-radius:16px;
+
+    box-shadow:0 0 0 2px var(--borde2);
 
     color:var(--textobase);
 
@@ -172,6 +186,28 @@ TARJETAS
 
     background:var(--grupo-color);
 
-    border-radius:10px;
+    border-radius:20px;
+
+}
+
+/*==================================
+CRÉDITO
+==================================*/
+
+.pn01-credit{
+
+    width:var(--post-width,600px);
+
+    margin:10px auto 0;
+
+    text-align:right;
+
+    font-size:7px;
+
+    letter-spacing:5px;
+
+    color:var(--textobase);
+
+    opacity:.45;
 
 }
