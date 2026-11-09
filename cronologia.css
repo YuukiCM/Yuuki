@@ -7,11 +7,11 @@
 .yue-timeline {
     --grupo: #c9a44c;
     --yt-open-color: #4c9b75;
-    --yt-closed-color: #648bbd;
+    --yt-closed-color: #bd6268;
     --yt-abandoned-color: #929292;
     --yt-event-color: #c69a3c;
     --yt-group-color: #9875b5;
-    --yt-master-color: #bd6268;
+    --yt-master-color: #648bbd;
 
     width: 450px;
     max-width: 100%;
