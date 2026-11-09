@@ -1,48 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+/* ==========================================================
+   CSS UNIFICADO - TABLILLAS DE FORO ROL
+   ========================================================== */
 
-/* La variable del grupo se define aquí o se sobrescribe en el CSS de cada grupo en tu foro */
-:root {
-  --color-grupo: #7289da;
-}
+/* Importación de fuentes base y adicionales usadas en los títulos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
-.tablilla-rol {
-  background: transparent;
-  color: inherit; /* Se adapta al modo claro/oscuro del foro */
-  font-family: 'Quicksand', sans-serif;
-  font-size: 12px;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
+/* --- TABLILLA 1 --- */
+.tb1-box { border: 1px solid var(--color-grupo); border-left: 5px solid var(--color-grupo); background: transparent; color: inherit; padding: 20px; box-sizing: border-box; max-width: 650px; margin: 0 auto; }
+.tb1-title { margin: 0 0 10px 0; color: var(--color-grupo); font-size: 20px; text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+.tb1-data { display: flex; justify-content: space-around; border-top: 1px dashed currentColor; border-bottom: 1px dashed currentColor; padding: 8px 0; margin-bottom: 15px; font-family: 'Quicksand', sans-serif; font-size: 11px; opacity: 0.8; }
+.tb1-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
 
-/* Título con opción de cambiar fuente directo en el HTML */
-.tablilla-titulo {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--color-grupo);
-  border-bottom: 2px solid var(--color-grupo);
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
+/* --- TABLILLA 2 --- */
+.tb2-box { border: 2px dotted var(--color-grupo); padding: 25px; background: transparent; color: inherit; max-width: 600px; margin: 0 auto; clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
+.tb2-title { color: var(--color-grupo); margin: 0 0 15px 0; font-size: 22px; text-align: left; }
+.tb2-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-family: 'Quicksand', sans-serif; font-size: 11px; background: rgba(150,150,150,0.1); padding: 8px; margin-bottom: 15px; text-align: center; border-radius: 4px; }
+.tb2-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.7; text-align: justify; }
 
-/* Sección de datos (lugar, fecha, personaje) */
-.tablilla-datos {
-  display: flex;
-  gap: 15px;
-  font-size: 11px;
-  opacity: 0.85;
-  margin-bottom: 15px;
-}
+/* --- TABLILLA 3 --- */
+.tb3-box { border: 1px solid currentColor; padding: 20px; max-width: 620px; margin: 0 auto; position: relative; background: transparent; color: inherit; }
+.tb3-top { border-bottom: 2px solid var(--color-grupo); padding-bottom: 10px; margin-bottom: 15px; }
+.tb3-tag { background: var(--color-grupo); color: #fff; padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 1px; }
+.tb3-title { margin: 10px 0 0 0; font-size: 18px; }
+.tb3-meta { display: flex; flex-direction: column; gap: 4px; font-family: 'Quicksand', sans-serif; font-size: 11px; margin-bottom: 15px; opacity: 0.85; border-left: 2px solid var(--color-grupo); padding-left: 10px; }
+.tb3-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
 
-.tablilla-datos span {
-  color: var(--color-grupo);
-  font-weight: 600;
-}
+/* --- TABLILLA 4 --- */
+.tb4-box { border: 1px dashed var(--color-grupo); padding: 25px; max-width: 600px; margin: 0 auto; background: transparent; color: inherit; border-radius: 12px; }
+.tb4-title { font-size: 24px; text-align: center; color: var(--color-grupo); margin: 0 0 15px 0; }
+.tb4-badges { display: flex; gap: 8px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+.tb4-badge { border: 1px solid var(--color-grupo); font-family: 'Quicksand', sans-serif; font-size: 11px; padding: 4px 10px; border-radius: 20px; }
+.tb4-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
 
-/* Contenido del post */
-.tablilla-post {
-  text-align: justify;
-}
+/* --- TABLILLA 5 --- */
+.tb5-box { border: 3px double var(--color-grupo); padding: 5px; max-width: 640px; margin: 0 auto; background: transparent; color: inherit; }
+.tb5-inner { border: 1px solid var(--color-grupo); padding: 20px; }
+.tb5-title { text-align: center; margin: 0; font-size: 26px; color: var(--color-grupo); }
+.tb5-divider { text-align: center; color: var(--color-grupo); font-size: 12px; margin: 5px 0 10px 0; }
+.tb5-data { font-family: 'Quicksand', sans-serif; font-size: 11px; text-align: center; margin-bottom: 20px; font-style: italic; opacity: 0.8; }
+.tb5-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.7; text-align: justify; }
+
+/* --- TABLILLA 6 --- */
+.tb6-box { border: 1px solid var(--color-grupo); max-width: 600px; margin: 0 auto; padding: 0 0 20px 0; background: transparent; color: inherit; }
+.tb6-bar { background: var(--color-grupo); color: #fff; padding: 4px 10px; font-size: 10px; font-family: monospace; }
+.tb6-title { font-size: 16px; margin: 15px; color: var(--color-grupo); }
+.tb6-info { font-family: 'Quicksand', sans-serif; font-size: 11px; margin: 0 15px 15px 15px; padding: 8px; border-left: 3px solid var(--color-grupo); background: rgba(120,120,120,0.1); display: flex; gap: 15px; }
+.tb6-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; margin: 0 15px; text-align: justify; }
+
+/* --- TABLILLA 7 --- */
+.tb7-box { display: flex; border: 1px solid rgba(150,150,150,0.3); max-width: 630px; margin: 0 auto; background: transparent; color: inherit; }
+.tb7-sidebar { width: 12px; background: var(--color-grupo); flex-shrink: 0; }
+.tb7-content { padding: 20px; flex-grow: 1; }
+.tb7-title { margin: 0 0 10px 0; font-size: 22px; text-transform: uppercase; border-bottom: 1px solid var(--color-grupo); padding-bottom: 5px; }
+.tb7-data { font-family: 'Quicksand', sans-serif; font-size: 11px; margin-bottom: 15px; opacity: 0.8; }
+.tb7-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 8 --- */
+.tb8-box { border: 2px solid var(--color-grupo); box-shadow: 6px 6px 0px var(--color-grupo); padding: 20px; max-width: 600px; margin: 10px auto; background: transparent; color: inherit; }
+.tb8-title { margin: 0 0 15px 0; font-size: 22px; color: var(--color-grupo); }
+.tb8-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; border-bottom: 2px solid var(--color-grupo); padding-bottom: 10px; font-family: 'Quicksand', sans-serif; font-size: 11px; }
+.tb8-grid b { display: block; color: var(--color-grupo); }
+.tb8-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 9 --- */
+.tb9-box { border-top: 3px solid var(--color-grupo); border-bottom: 3px solid var(--color-grupo); padding: 25px 15px; max-width: 620px; margin: 0 auto; background: transparent; color: inherit; }
+.tb9-title { text-align: center; font-size: 20px; margin: 0 0 15px 0; letter-spacing: 3px; }
+.tb9-data-box { border: 1px solid var(--color-grupo); padding: 8px; display: flex; justify-content: space-around; margin-bottom: 20px; font-family: 'Quicksand', sans-serif; font-size: 11px; border-radius: 8px; }
+.tb9-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.7; text-align: justify; }
+
+/* --- TABLILLA 10 --- */
+.tb10-box { border: 1px solid currentColor; padding: 25px; max-width: 600px; margin: 0 auto; position: relative; background: transparent; color: inherit; border-top: 8px solid var(--color-grupo); }
+.tb10-stamp { position: absolute; top: 15px; right: 15px; border: 2px dashed var(--color-grupo); color: var(--color-grupo); padding: 4px 8px; font-size: 9px; font-weight: bold; }
+.tb10-title { margin: 0 0 10px 0; font-size: 26px; }
+.tb10-data { font-family: 'Quicksand', sans-serif; font-size: 11px; display: flex; gap: 15px; margin-bottom: 20px; border-bottom: 1px solid var(--color-grupo); padding-bottom: 8px; opacity: 0.8; }
+.tb10-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 11 --- */
+.tb11-box { border: 1px solid var(--color-grupo); padding: 8px; max-width: 620px; margin: 0 auto; background: transparent; color: inherit; }
+.tb11-wrapper { border: 1px solid var(--color-grupo); padding: 20px; }
+.tb11-title { text-align: center; margin: 0 0 5px 0; font-size: 20px; color: var(--color-grupo); text-transform: uppercase; }
+.tb11-info { font-family: 'Quicksand', sans-serif; font-size: 11px; text-align: center; margin-bottom: 20px; opacity: 0.7; letter-spacing: 1px; }
+.tb11-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 12 --- */
+.tb12-box { border: 1px solid currentColor; padding: 20px; max-width: 640px; margin: 0 auto; background: transparent; color: inherit; }
+.tb12-title { margin: 0 0 15px 0; font-size: 24px; color: var(--color-grupo); text-align: center; }
+.tb12-body { display: flex; gap: 20px; }
+.tb12-data { width: 110px; flex-shrink: 0; border-right: 2px solid var(--color-grupo); font-family: 'Quicksand', sans-serif; font-size: 11px; display: flex; flex-direction: column; gap: 10px; }
+.tb12-data b { color: var(--color-grupo); display: block; }
+.tb12-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; flex-grow: 1; }
+
+/* --- TABLILLA 13 --- */
+.tb13-box { border: 2px solid var(--color-grupo); border-radius: 20px; padding: 25px; max-width: 600px; margin: 0 auto; background: transparent; color: inherit; }
+.tb13-title { text-align: center; margin: 0 0 10px 0; font-size: 22px; color: var(--color-grupo); }
+.tb13-bar { background: var(--color-grupo); color: #fff; border-radius: 10px; padding: 4px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 11px; margin-bottom: 20px; }
+.tb13-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 14 --- */
+.tb14-box { border-left: 4px solid var(--color-grupo); border-right: 1px solid var(--color-grupo); padding: 15px 20px; max-width: 620px; margin: 0 auto; background: transparent; color: inherit; }
+.tb14-title { font-size: 28px; margin: 0; color: var(--color-grupo); letter-spacing: 1px; }
+.tb14-data { font-family: 'Quicksand', sans-serif; font-size: 11px; font-weight: bold; margin-bottom: 15px; opacity: 0.7; }
+.tb14-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 15 --- */
+.tb15-box { border: 3px solid var(--color-grupo); padding: 20px; max-width: 600px; margin: 0 auto; background: transparent; color: inherit; }
+.tb15-head { border-bottom: 3px solid var(--color-grupo); margin-bottom: 10px; padding-bottom: 5px; }
+.tb15-title { margin: 0; font-size: 24px; color: var(--color-grupo); letter-spacing: 1px; }
+.tb15-data { font-family: 'Quicksand', sans-serif; font-size: 11px; margin-bottom: 15px; font-weight: 700; }
+.tb15-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 16 --- */
+.tb16-box { border: 1px solid rgba(150,150,150,0.2); border-top: 4px solid var(--color-grupo); padding: 20px; max-width: 620px; margin: 0 auto; background: transparent; color: inherit; }
+.tb16-title { text-align: center; margin: 0 0 15px 0; font-size: 20px; text-transform: uppercase; }
+.tb16-grid { display: flex; gap: 10px; margin-bottom: 20px; }
+.tb16-card { flex: 1; border: 1px solid var(--color-grupo); padding: 6px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 11px; border-radius: 4px; }
+.tb16-card b { display: block; color: var(--color-grupo); font-size: 10px; }
+.tb16-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 17 --- */
+.tb17-box { border: 1px dashed var(--color-grupo); padding: 20px; max-width: 600px; margin: 0 auto; background: transparent; color: inherit; }
+.tb17-meta { display: flex; justify-content: space-between; font-family: 'Quicksand', sans-serif; font-size: 10px; border-bottom: 1px solid var(--color-grupo); padding-bottom: 5px; opacity: 0.8; }
+.tb17-title { margin: 15px 0; font-size: 22px; color: var(--color-grupo); text-align: center; }
+.tb17-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 18 --- */
+.tb18-box { border: 1px solid var(--color-grupo); padding: 25px; max-width: 630px; margin: 0 auto; background: transparent; color: inherit; position: relative; }
+.tb18-title { text-align: center; margin: 0; font-size: 24px; color: var(--color-grupo); letter-spacing: 2px; }
+.tb18-line { text-align: center; color: var(--color-grupo); margin: 5px 0; font-size: 10px; }
+.tb18-data { font-family: 'Quicksand', sans-serif; font-size: 11px; text-align: center; margin-bottom: 20px; opacity: 0.8; }
+.tb18-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.7; text-align: justify; }
+
+/* --- TABLILLA 19 --- */
+.tb19-box { border: 2px solid var(--color-grupo); border-radius: 15px 15px 15px 0px; padding: 20px; max-width: 600px; margin: 0 auto; background: transparent; color: inherit; }
+.tb19-header { border-bottom: 1px solid rgba(150,150,150,0.3); padding-bottom: 10px; margin-bottom: 15px; }
+.tb19-title { margin: 0; font-size: 18px; color: var(--color-grupo); }
+.tb19-sub { font-family: 'Quicksand', sans-serif; font-size: 11px; opacity: 0.7; margin-top: 3px; }
+.tb19-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
+
+/* --- TABLILLA 20 --- */
+.tb20-box { border: 1px solid currentColor; padding: 20px; max-width: 630px; margin: 0 auto; background: transparent; color: inherit; }
+.tb20-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--color-grupo); padding-bottom: 8px; margin-bottom: 12px; }
+.tb20-title { margin: 0; font-size: 20px; color: var(--color-grupo); }
+.tb20-tag { background: var(--color-grupo); color: #fff; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 3px; }
+.tb20-data { font-family: 'Quicksand', sans-serif; font-size: 11px; margin-bottom: 15px; opacity: 0.85; }
+.tb20-post { font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 1.6; text-align: justify; }
