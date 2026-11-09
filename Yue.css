@@ -345,3 +345,830 @@
         padding: 12px;
     }
 }
+
+/* ==========================================
+   YUE STUDIO — VOLUME II
+   STYLES 04 TO 13
+   ========================================== */
+
+/* 04 — DOSSIER */
+
+.yue-dossier {
+    border: 9px solid var(--grupo);
+    padding: 0 22px 20px;
+    position: relative;
+}
+
+.yue-dossier-tab {
+    width: fit-content;
+    margin: 0 0 20px;
+    padding: 8px 15px;
+    background: var(--grupo);
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-dossier-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grupo);
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.yue-dossier-head b {
+    color: var(--grupo);
+    font-size: 19px;
+}
+
+.yue-dossier-title {
+    font-family: var(--titulo), serif;
+    font-size: 36px;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+.yue-dossier-info {
+    display: grid;
+    gap: 7px;
+    padding: 13px;
+    border: 1px solid var(--grupo);
+    font-size: 9px;
+}
+
+.yue-dossier-info b {
+    display: inline-block;
+    width: 85px;
+    color: var(--grupo);
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.yue-dossier-content {
+    padding: 20px 2px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-dossier-stamp {
+    padding-top: 12px;
+    border-top: 2px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: right;
+    opacity: .7;
+}
+
+/* 05 — TICKET */
+
+.yue-ticket {
+    position: relative;
+    padding: 22px;
+    border: 8px solid var(--grupo);
+    border-radius: 2px;
+}
+
+.yue-ticket-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-ticket-head span {
+    color: var(--grupo);
+}
+
+.yue-ticket-title {
+    padding: 24px 0;
+    font-family: var(--titulo), serif;
+    font-size: 38px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.yue-ticket-perforation {
+    height: 2px;
+    margin: 0 -22px;
+    border-top: 2px dashed var(--grupo);
+}
+
+.yue-ticket-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    padding: 15px 0;
+}
+
+.yue-ticket-details span {
+    font-size: 9px;
+    overflow-wrap: anywhere;
+}
+
+.yue-ticket-details small {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--grupo);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.yue-ticket-content {
+    padding: 18px 2px;
+    border-top: 1px solid var(--grupo);
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-ticket-footer {
+    margin: 0 -22px -22px;
+    padding: 12px;
+    background: var(--grupo);
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* 06 — FREQUENCY */
+
+.yue-frequency {
+    padding: 22px;
+    border: 9px solid var(--grupo);
+}
+
+.yue-frequency-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-frequency-top span:last-child {
+    color: var(--grupo);
+}
+
+.yue-frequency-wave {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    margin: 18px 0;
+    padding: 0 10px;
+    border: 1px solid var(--grupo);
+}
+
+.yue-frequency-wave i {
+    display: block;
+    width: 3px;
+    height: 30%;
+    background: var(--grupo);
+}
+
+.yue-frequency-wave i:nth-child(3n) {
+    height: 85%;
+}
+
+.yue-frequency-wave i:nth-child(3n + 1) {
+    height: 55%;
+}
+
+.yue-frequency-wave i:nth-child(4n) {
+    height: 100%;
+}
+
+.yue-frequency-title {
+    padding: 8px 0 17px;
+    font-family: var(--titulo), serif;
+    font-size: 36px;
+    line-height: 1.15;
+}
+
+.yue-frequency-meta {
+    display: grid;
+    gap: 7px;
+    padding: 14px;
+    background: color-mix(in srgb, var(--grupo) 10%, transparent);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.yue-frequency-meta span {
+    overflow-wrap: anywhere;
+}
+
+.yue-frequency-content {
+    padding: 20px 2px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-frequency-footer {
+    padding-top: 12px;
+    border-top: 2px solid var(--grupo);
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* 07 — GAZETTE */
+
+.yue-gazette {
+    padding: 20px;
+    border: 8px double var(--grupo);
+}
+
+.yue-gazette-masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--grupo);
+    font-family: var(--titulo), serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.yue-gazette-masthead span {
+    color: var(--grupo);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.yue-gazette-date {
+    padding: 9px 0;
+    border-bottom: 1px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.yue-gazette-title {
+    padding: 22px 0 10px;
+    font-family: var(--titulo), serif;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.yue-gazette-subtitle {
+    padding-bottom: 14px;
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.yue-gazette-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 13px;
+    padding: 12px 0;
+    border-top: 1px solid var(--grupo);
+    border-bottom: 1px solid var(--grupo);
+    font-size: 8px;
+}
+
+.yue-gazette-content {
+    padding: 20px 2px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-gazette-footer {
+    padding-top: 12px;
+    border-top: 3px double var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* 08 — ORBIT */
+
+.yue-orbit {
+    padding: 22px;
+    border: 9px solid var(--grupo);
+    border-radius: 65px 4px 65px 4px;
+}
+
+.yue-orbit-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--grupo);
+}
+
+.yue-orbit-circle {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px double var(--grupo);
+    border-radius: 50%;
+    color: var(--grupo);
+    font-family: var(--titulo), serif;
+    font-size: 25px;
+}
+
+.yue-orbit-head div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.yue-orbit-head span {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-orbit-head small {
+    color: var(--grupo);
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.yue-orbit-title {
+    padding: 25px 5px 17px;
+    font-family: var(--titulo), serif;
+    font-size: 37px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.yue-orbit-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 15px;
+    padding: 13px 0;
+    border-top: 2px solid var(--grupo);
+    border-bottom: 2px solid var(--grupo);
+    font-size: 9px;
+}
+
+.yue-orbit-content {
+    padding: 22px 5px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-orbit-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    border-top: 1px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-orbit-footer span:last-child {
+    color: var(--grupo);
+}
+
+/* 09 — BLUEPRINT */
+
+.yue-blueprint {
+    padding: 20px;
+    border: 9px solid var(--grupo);
+    background-image:
+        linear-gradient(to right, color-mix(in srgb, var(--grupo) 10%, transparent) 1px, transparent 1px),
+        linear-gradient(to bottom, color-mix(in srgb, var(--grupo) 10%, transparent) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.yue-blueprint-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-blueprint-title {
+    padding: 23px 0 12px;
+    font-family: var(--titulo), serif;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.yue-blueprint-coords {
+    padding-bottom: 14px;
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.yue-blueprint-data {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid var(--grupo);
+}
+
+.yue-blueprint-data div {
+    min-width: 0;
+    padding: 11px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.yue-blueprint-data div + div {
+    border-left: 1px solid var(--grupo);
+}
+
+.yue-blueprint-data small {
+    color: var(--grupo);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.yue-blueprint-data b {
+    font-size: 9px;
+    overflow-wrap: anywhere;
+}
+
+.yue-blueprint-content {
+    padding: 20px 12px;
+    margin-top: 16px;
+    border-left: 3px solid var(--grupo);
+    background: color-mix(in srgb, var(--grupo) 6%, transparent);
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-blueprint-footer {
+    padding-top: 12px;
+    border-top: 2px solid var(--grupo);
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* 10 — FRAME */
+
+.yue-frame {
+    padding: 17px;
+    border: 10px solid var(--grupo);
+    position: relative;
+}
+
+.yue-frame:before,
+.yue-frame:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--grupo) 0 8px,
+        transparent 8px 16px
+    );
+}
+
+.yue-frame:before {
+    left: 2px;
+}
+
+.yue-frame:after {
+    right: 2px;
+}
+
+.yue-frame-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 8px 12px;
+    border-bottom: 2px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.yue-frame-title {
+    padding: 22px 8px;
+    font-family: var(--titulo), serif;
+    font-size: 37px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.yue-frame-meta {
+    display: grid;
+    gap: 7px;
+    padding: 13px;
+    border-top: 1px solid var(--grupo);
+    border-bottom: 1px solid var(--grupo);
+    font-size: 9px;
+}
+
+.yue-frame-content {
+    padding: 20px 9px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-frame-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 8px 3px;
+    border-top: 2px solid var(--grupo);
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 11 — POSTMARK */
+
+.yue-postmark {
+    padding: 22px;
+    border: 9px dotted var(--grupo);
+    position: relative;
+}
+
+.yue-postmark-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.yue-postmark-seal {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--grupo);
+    border-radius: 50%;
+    color: var(--grupo);
+    font-family: var(--titulo), serif;
+    font-size: 23px;
+    line-height: 1;
+    transform: rotate(8deg);
+}
+
+.yue-postmark-seal small {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+
+.yue-postmark-title {
+    padding: 20px 0;
+    font-family: var(--titulo), serif;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.yue-postmark-address {
+    display: grid;
+    gap: 7px;
+    padding: 13px;
+    border: 1px solid var(--grupo);
+    font-size: 9px;
+    letter-spacing: .5px;
+}
+
+.yue-postmark-content {
+    padding: 20px 2px;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-postmark-footer {
+    padding-top: 12px;
+    border-top: 2px solid var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+/* 12 — INDEX */
+
+.yue-indexed {
+    display: grid;
+    grid-template-columns: 85px minmax(0, 1fr);
+    border: 9px solid var(--grupo);
+    padding: 0;
+}
+
+.yue-indexed-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grupo);
+    color: #fff;
+    font-family: var(--titulo), serif;
+    font-size: 52px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+}
+
+.yue-indexed-main {
+    min-width: 0;
+    padding: 20px 17px;
+}
+
+.yue-indexed-label {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--grupo);
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.yue-indexed-title {
+    padding: 20px 0;
+    font-family: var(--titulo), serif;
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.yue-indexed-meta {
+    display: grid;
+    gap: 7px;
+    padding: 12px 0;
+    border-top: 2px solid var(--grupo);
+    border-bottom: 2px solid var(--grupo);
+    font-size: 9px;
+}
+
+.yue-indexed-content {
+    padding: 18px 0;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-indexed-footer {
+    padding-top: 11px;
+    border-top: 1px solid var(--grupo);
+    color: var(--grupo);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* 13 — DUALITY */
+
+.yue-duality {
+    border: 9px solid var(--grupo);
+    padding: 18px;
+}
+
+.yue-duality-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 55px;
+    border-bottom: 3px solid var(--grupo);
+}
+
+.yue-duality-title {
+    padding: 12px 10px 20px 0;
+    font-family: var(--titulo), serif;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.yue-duality-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grupo);
+    color: #fff;
+    font-family: var(--titulo), serif;
+    font-size: 25px;
+}
+
+.yue-duality-panels {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 14px;
+    gap: 6px;
+}
+
+.yue-duality-panel {
+    min-width: 0;
+    padding: 12px 7px;
+    border: 1px solid var(--grupo);
+}
+
+.yue-duality-panel small {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--grupo);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.yue-duality-panel b {
+    font-size: 9px;
+    overflow-wrap: anywhere;
+}
+
+.yue-duality-content {
+    margin-top: 18px;
+    padding: 20px 10px;
+    border-top: 2px solid var(--grupo);
+    border-bottom: 2px solid var(--grupo);
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.yue-duality-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 12px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+
+/* ==========================================
+   RESPONSIVE — VOLUME II
+   ========================================== */
+
+@media screen and (max-width: 500px) {
+    .yue-dossier,
+    .yue-ticket,
+    .yue-frequency,
+    .yue-gazette,
+    .yue-orbit,
+    .yue-blueprint,
+    .yue-postmark,
+    .yue-duality {
+        padding: 14px;
+    }
+
+    .yue-ticket-footer {
+        margin: 0 -14px -14px;
+    }
+
+    .yue-indexed {
+        grid-template-columns: 55px minmax(0, 1fr);
+    }
+
+    .yue-indexed-main {
+        padding: 15px 10px;
+    }
+
+    .yue-indexed-number {
+        font-size: 38px;
+    }
+
+    .yue-specimen-grid div,
+    .yue-blueprint-data div,
+    .yue-duality-panel {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
