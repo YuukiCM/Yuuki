@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+/* Base global */
+.sk-post-body {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.6;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* --- ESTILO 1: BRUTALIST & MARCOS GRUESOS (Frame Shift) --- */
+.sk-tab-brutalist {
+  width: 100%;
+  max-width: 540px;
+  margin: 15px auto;
+  background: transparent !important;
+  border: 7px solid var(--grupo-color, #8e44ad);
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+}
+.sk-tab-brutalist .sk-header {
+  border-bottom: 7px solid var(--grupo-color, #8e44ad);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+.sk-tab-brutalist .sk-title {
+  text-transform: none;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+.sk-tab-brutalist .sk-meta-box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.sk-tab-brutalist .sk-tag {
+  background: var(--grupo-color, #8e44ad);
+  color: #ffffff;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.sk-tab-brutalist .sk-tag i {
+  margin-right: 4px;
+}
+
+/* --- ESTILO 2: MODERNO INDUSTRIAL (Asymmetric Notch) --- */
+.sk-tab-industrial {
+  width: 100%;
+  max-width: 540px;
+  margin: 15px auto;
+  background: transparent !important;
+  border-left: 8px solid var(--grupo-color, #e74c3c);
+  border-right: 2px solid var(--grupo-color, #e74c3c);
+  border-top: 2px solid var(--grupo-color, #e74c3c);
+  border-bottom: 8px solid var(--grupo-color, #e74c3c);
+  border-radius: 0 16px 0 16px;
+  padding: 22px;
+}
+.sk-tab-industrial .sk-grid-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(150,150,150,0.3);
+}
+.sk-tab-industrial .sk-title {
+  text-transform: none;
+  margin: 0;
+}
+.sk-tab-industrial .sk-side-badge {
+  background: transparent;
+  border: 2px solid var(--grupo-color, #e74c3c);
+  color: var(--grupo-color, #e74c3c);
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.sk-tab-industrial .sk-data-strip {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+.sk-tab-industrial .sk-data-item i {
+  color: var(--grupo-color, #e74c3c);
+  margin-right: 3px;
+}
+
+/* --- ESTILO 3: MINIMAL RETRO (Floating Capsule) --- */
+.sk-tab-capsule {
+  width: 100%;
+  max-width: 540px;
+  margin: 15px auto;
+  background: transparent !important;
+  border: 8px double var(--grupo-color, #2ecc71);
+  border-radius: 24px;
+  padding: 25px;
+}
+.sk-tab-capsule .sk-title-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sk-tab-capsule .sk-title {
+  text-transform: none;
+  display: inline-block;
+  border-bottom: 3px solid var(--grupo-color, #2ecc71);
+  padding-bottom: 4px;
+}
+.sk-tab-capsule .sk-pills-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.sk-tab-capsule .sk-pill {
+  border: 1px solid var(--grupo-color, #2ecc71);
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-size: 10px;
+}
+.sk-tab-capsule .sk-pill b {
+  color: var(--grupo-color, #2ecc71);
+}
