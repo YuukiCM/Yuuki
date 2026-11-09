@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* La variable del grupo se define aquí o se sobrescribe en el CSS de cada grupo en tu foro */
+:root {
+  --color-grupo: #7289da;
+}
+
+.tablilla-rol {
+  background: transparent;
+  color: inherit; /* Se adapta al modo claro/oscuro del foro */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Título con opción de cambiar fuente directo en el HTML */
+.tablilla-titulo {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-grupo);
+  border-bottom: 2px solid var(--color-grupo);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Sección de datos (lugar, fecha, personaje) */
+.tablilla-datos {
+  display: flex;
+  gap: 15px;
+  font-size: 11px;
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+
+.tablilla-datos span {
+  color: var(--color-grupo);
+  font-weight: 600;
+}
+
+/* Contenido del post */
+.tablilla-post {
+  text-align: justify;
+}
